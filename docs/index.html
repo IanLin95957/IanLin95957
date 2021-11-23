@@ -1,9 +1,155 @@
 <html>
 <head>
-<title>Main page</title>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-<h1>This is the main page of my website</h1>
-<a href="Practice_week_3_1.html">To Practice_week_3_1.html</a>
+
+<div class="header">
+  <h1>Website about Sabaton</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="TheLastStand.html">Album: The Last Stand</a>
+  <a href="week8.html" style="float:right">Week8</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Newest Song</h2>
+      <h5>Release date, Nov 18, 2021</h5>
+	  <p>Christmas Truce by Sabaton, from the new album The War To End All Wars.</p>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/goXDAFtkJLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>The official lyric video from Sabaton offical youtube channel.</p>
+    </div>
+    <div class="card">
+      <h2>New Song</h2>
+      <h5>Release date, Sep 17, 2021</h5>
+      <p>Steel Commanders by Sabaton. (Somehow youtube don't allow me to play here.)</p>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/3QRkn_lxpec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>The official lyric video from Sabaton offical youtube channel.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Sabaton</h2>
+      <p>Sabaton is a Swedish heavy metal band. Most of their nine albums are written about war events.</p>
+    </div>
+    <div class="card">
+      <h3>Offical Website</h3>
+	  <a href="https://www.sabaton.net/"><img src="images/Sabaton.png"></a>
+	  
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2></h2>
+</div>
+
 </body>
 </html>
